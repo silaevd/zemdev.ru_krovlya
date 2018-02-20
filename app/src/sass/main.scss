@@ -1,0 +1,77 @@
+@import "reset";
+@import "fonts";
+@import "media-queries";
+@import "variables";
+@import "smart-grid";
+
+//Libs
+@import "libs/magnific-popup";
+
+
+//Partials
+@import "./partials/header";
+@import "./partials/goods";
+@import "./partials/advantages";
+@import "./partials/stages";
+@import "./partials/brands";
+@import "./partials/contacts";
+@import "./partials/footer";
+@import "./partials/requestForm";
+@import "./partials/popUp";
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 16px;
+  color: $black;
+}
+
+.wrapper {
+  margin: 0 auto;
+  max-width: 1920px;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1280px;
+}
+
+.sectionTitle {
+  font-family: "HelveticaNeueCyrLight";
+  font-size: 2.5em;
+  line-height: 1.3em;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 30px 0 15px;
+}
+
+.button {
+  font-family: "OpenSansSemiBold";
+  font-size: 1.063em;
+  border: 2px solid $orange;
+  border-radius: 4px;
+  transition: $hover-transition;
+  &:hover {
+    color: $white;
+    background-color: $orange;
+    cursor: pointer;
+  }
+}
+
+.hidden {
+  display: none;
+}
+
+@include max-screen(480px) {
+  .sectionTitle {
+    font-size: 2em;
+  }
+}
+
+@include max-screen(320px) {
+  .sectionTitle {
+    font-size: 1.7em;
+  }
+}
