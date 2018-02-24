@@ -5,8 +5,11 @@
 @import "smart-grid";
 
 //Libs
-@import "libs/magnific-popup";
+@import "libs/magnific-popup/magnific-popup";
 
+$fa-font-path:   "../fonts/fontawesome";
+@import "libs/fontawesome-5.0.6/fontawesome";
+@import "libs/fontawesome-5.0.6/fa-regular.scss";
 
 //Partials
 @import "./partials/header";
@@ -39,7 +42,7 @@ body {
 }
 
 .sectionTitle {
-  font-family: "HelveticaNeueCyrLight";
+  font-family: "HelveticaNeueCyrLight", sans-serif;
   font-size: 2.5em;
   line-height: 1.3em;
   text-transform: uppercase;
@@ -48,7 +51,7 @@ body {
 }
 
 .button {
-  font-family: "OpenSansSemiBold";
+  font-family: "OpenSansSemiBold", sans-serif;
   font-size: 1.063em;
   border: 2px solid $orange;
   border-radius: 4px;

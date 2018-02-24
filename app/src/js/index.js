@@ -14,7 +14,7 @@ $(document).ready(function () {
 
     $('.goodsItem').click(function () {
 
-        var img = this.querySelector('.goodsItem__img').getAttribute('src');
+        var img = this.querySelector('.goodsItem__img').getAttribute('data-img-src');
         const title = this.querySelector('.goodsItem__title').textContent;
         const price = this.querySelector('.goodsItem__price').querySelector('.highlight').textContent;
         const desc = this.querySelector('.goodsItem__desc').textContent;
