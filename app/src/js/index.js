@@ -37,6 +37,8 @@ $(document).ready(function () {
         },
         preloader: false,
         showCloseBtn: false,
+        autoFocusLast: true,
+        fixedContentPos: false,
     });
 
 
@@ -51,6 +53,8 @@ $(document).ready(function () {
         },
         preloader: false,
         showCloseBtn: false,
+        autoFocusLast: true,
+        fixedContentPos: false,
     });
 
 
